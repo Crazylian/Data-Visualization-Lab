@@ -1,0 +1,271 @@
+#frame0 {
+    /* Line折线图 */
+    position: absolute;
+    left: 126px;
+    top: 872px;
+    width: 800px;
+    height: 419px;
+    opacity: 1;
+    /* background: #959595; */
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 10px;
+}
+
+.big_card {
+    /* Line折线图 */
+
+    /* 自动布局子元素 */
+    position: static;
+    width: 800px;
+    height: 419px;
+    border-radius: 12px;
+    opacity: 1;
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    /* padding: 24px; */
+    gap: 32px;
+
+    /* 外部/全局/white */
+    background: #FFFFFF;
+
+    box-shadow: 0px 4px 6px 0px rgba(62, 73, 84, 0.04);
+
+    z-index: 0;
+}
+
+.middle_card {
+    /* Line折线图 */
+
+    /* 自动布局子元素 */
+    position: static;
+    width: 400px;
+    height: 419px;
+    border-radius: 12px;
+    opacity: 1;
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    /* padding: 24px; */
+    gap: 32px;
+
+    /* 外部/全局/white */
+    background: #FFFFFF;
+
+    box-shadow: 0px 4px 6px 0px rgba(62, 73, 84, 0.04);
+
+    z-index: 0;
+}
+
+#frame1 {
+    /* Frame 1304 */
+
+    position: absolute;
+    left: 974px;
+    top: 872px;
+    width: 800px;
+    height: 419px;
+    opacity: 1;
+    /* background: #777777; */
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 24px 24px 24px 0px;
+    gap: 24px;
+}
+
+#frame2 {
+    /* Frame 1309 */
+
+    position: absolute;
+    left: 126px;
+    top: 1339px;
+    width: 800px;
+    height: 509px;
+    opacity: 1;
+    /* background: #888888; */
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: row;
+    padding: 0px 24px 24px 24px;
+    gap: 24px;
+}
+
+.card {
+    /* 自动布局子元素 */
+    position: static;
+    left: 0px;
+    top: 0px;
+    width: 324px;
+    height: 141.5px;
+    border-radius: 12px;
+    opacity: 1;
+    gap: 9.5px;
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 28px 32px;
+    flex-grow: 0.5;
+    align-self: stretch;
+
+    /* 外部/Primary/Primary-100% */
+    background: #ffffff;
+
+    box-shadow: 0px 4px 6px 0px rgba(62, 73, 84, 0.04);
+
+    z-index: 0;
+}
+
+.text-bold {
+    margin: 12px 0px;
+    font-family: HarmonyOS_Sans_SC_Bold;
+    /* font-size: 32px; */
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+#frame3 {
+    /* Frame 1312 */
+
+    position: absolute;
+    left: 974px;
+    top: 1339px;
+    width: 800px;
+    height: 509px;
+    opacity: 1;
+    /* background: #828282; */
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px 24px 0px;
+    gap: 10px;
+}
+
+#title {
+    /* 顶部菜单 */
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    /* width: 1580px; */
+    height: 57px;
+    opacity: 1;
+    z-index: 99;
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+
+    /* 外部/全局/white */
+    background: #ffffff;
+}
+
+.title {
+    /* Frame 1295 */
+
+    /* 自动布局子元素 */
+    position: static;
+    left: 20px;
+    top: 22.5px;
+    width: 300px;
+    height: 36px;
+    opacity: 1;
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    z-index: 0;
+}
+
+#tim {
+    /* right */
+
+    /* 自动布局子元素 */
+    position: static;
+    left: 1195px;
+    top: 12px;
+    width: 405px;
+    height: 57px;
+    opacity: 1;
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+
+    z-index: 2;
+}
+
+#menu {
+    /* 左侧菜单 */
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 252px;
+    height: 1000px;
+    opacity: 1;
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 1px;
+
+    /* 外部/全局/white */
+    background: #ffffff;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+#map {
+    /* 自动布局子元素 */
+    position: absolute;
+    left: 150px;
+    top: 104px;
+    width: 1576px;
+    height: 720px;
+    border-radius: 12px;
+    opacity: 1;
+
+    /* 自动布局 */
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 32px;
+
+    /* 外部/全局/white */
+    background: #FFFFFF;
+
+    box-shadow: 0px 4px 6px 0px rgba(58, 68, 78, 0.04);
+
+    z-index: 0;
+}

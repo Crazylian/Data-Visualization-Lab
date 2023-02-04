@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <script src="../static/js/jquery.js"></script>
+    <!-- <link href="../static/pic/grip solid horizontal 1.png" type="image/x-icon" rel="shortcut icon"> -->
+    <script src="../static/js/echarts.js"></script>
+    <script src="../static/js/world.js"></script>
+    <title>my page</title>
+    <style>
+        body {
+            background-color: #efefef;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="menu">我是目录</div> -->
+    <div id="title">
+        <div class="title">
+            <img src="../static/pic/grip solid horizontal 1.png">
+            <h2>新冠疫情可视化分析</h2>
+        </div>
+        <div id="tim" , class="text-muted">
+            我是时间
+        </div>
+    </div>
+    <div id="map"></div>
+    <div id="frame0">
+        <div id="linechart" , class="big_card">折线图</div>
+    </div>
+    <div id="frame1">
+        <div style="background:#54a0ff" , class="card">
+            <p id="card1" , style="color:#FFFFFF; font-size: 32px;" , class="text-bold">new_cases</p>
+            <p style="color:#FFFFFF; font-size:18px" ,class="text-bold">全球新增确诊人数</p>
+        </div>
+        <div style="background:#eb6b6a" , class="card">
+            <p id="card2" , style="color:#FFFFFF; font-size: 32px;" , class="text-bold">new_cases</p>
+            <p style="color:#FFFFFF; font-size:18px" ,class="text-bold">全球新增死亡人数</p>
+        </div>
+        <div class="card">
+            <p id="card3" , style="color:#131414; font-size: 32px;" , class="text-bold">new_cases</p>
+            <p style="color:#131414; font-size:18px;" ,class="text-bold">全球累计确诊人数</p>
+        </div>
+        <div class="card">
+            <p id="card4" , style="color:#131414; font-size: 32px;" , class="text-bold">new_cases</p>
+            <p style="color:#131414; font-size:18px" ,class="text-bold">全球累计死亡人数</p>
+        </div>
+    </div>
+    <div id="frame2">
+        <div id="bar" , class="big_card"></div>
+        <!-- <div id="bar_pm" , class="middle_card"></div> -->
+    </div>
+    <div id="frame3">
+        <div id="bar_pm", class="big_card"></div>
+    </div>
+    <script src="../static/js/ec_map.js"></script>
+    <script src="../static/js/page_ctrl.js"></script>
+    <script src="../static/js/ec_linechart.js"></script>
+    <script src="../static/js/ec_bar.js"></script>
+    <script src="../static/js/ec_bar_pm.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+node_modules/
+.vscode/
+__pycache__/
+covid-19-data/
+venv/
+test.json
+test.py
+reptiles.ipynb
+render.html
+package-lock.json
+package.json
+mapchart.py
