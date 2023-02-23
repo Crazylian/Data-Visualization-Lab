@@ -21,9 +21,7 @@ def updatetime():
 @app.route("/card", methods=["get", "post"])
 def getcarddata():
     loc =request.form.get('region')
-    # print(loc)
     df = utils.get_card_data(loc)
-    # print(df)
     return jsonify(df.iloc[0].to_dict())
 
 
