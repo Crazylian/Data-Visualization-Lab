@@ -1,4 +1,4 @@
-var ec_bar_pm = echarts.init(document.getElementById('bar_pm'))
+var ec_bar_pm = echarts.init(document.getElementById('bar_pm'),'essos')
 
 var pmbaroption = {
     legend: {
@@ -6,8 +6,8 @@ var pmbaroption = {
         top: "12px"
     },
     title: {
-        text: '',
-        subtext: '',
+        text: '感染人数统计',
+        subtext: '每百万人',
         itemGap: 5,
         textStyle: {
             fontFamily: "HarmonyOS_Sans_SC_Bold",

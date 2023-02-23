@@ -1,4 +1,4 @@
-var ec_bar = echarts.init(document.getElementById('bar'))
+var ec_bar = echarts.init(document.getElementById('bar'),'essos')
 
 var baroption = {
     legend: {
@@ -6,8 +6,8 @@ var baroption = {
         top:"12px"
     },
     title: {
-        text: '',
-        subtext: '',
+        text: '感染人数统计',
+        subtext: '累计',
         itemGap: 5,
         textStyle: {
             fontFamily: "HarmonyOS_Sans_SC_Bold",

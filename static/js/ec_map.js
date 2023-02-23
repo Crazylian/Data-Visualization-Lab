@@ -1,4 +1,4 @@
-var ec_map = echarts.init(document.getElementById('map'));
+var ec_map = echarts.init(document.getElementById('map'),'essos');
 // ec_map.showLoading()
 
 let worlddata = [

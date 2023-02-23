@@ -2,6 +2,7 @@ import time
 import csv
 import pandas as pd
 import numpy as np
+import datetime
 
 new_cases = r'data\new_cases.csv'
 new_deaths = r'data\new_deaths.csv'
@@ -13,7 +14,9 @@ full_data = r'data\full_data.csv'
 
 
 def gettime():
-    time_str = time.strftime("%Y-%m-%d %H:%M")
+    # time_str = time.strftime("%Y-%m-%d %H:%M")
+    dt = datetime.datetime(2023,1,28)
+    time_str = dt.strftime("%Y-%m-%d")
     return time_str
 
 
@@ -51,4 +54,4 @@ def get_line_data():
 
 
 if __name__ == '__main__':
-    print(get_line_data())
+    print(gettime())

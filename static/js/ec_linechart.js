@@ -1,4 +1,4 @@
-var ec_line = echarts.init(document.getElementById("linechart"))
+var ec_line = echarts.init(document.getElementById("linechart"),'essos')
 
 var lineoption = {
     legend: {
