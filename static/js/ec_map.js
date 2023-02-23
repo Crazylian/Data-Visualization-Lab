@@ -53,6 +53,25 @@ var mapoption = {
                         lineoption.dataset[1].transform.config["="] = 'World';
                         lineoption.title.subtext = 'World';
                         ec_line.setOption(lineoption)
+                        $.ajax({
+                            url: "/card",
+                            type: "POST",
+                            // dataType: "application/json",
+                            data:{'region':'World'},
+                            success: function (res) {
+                                $("span").text("World")
+                                $("#card1").html(res.new_cases + " 人");
+                                $("#card2").html(res.new_deaths + " 人");
+                                $("#card3").html(res.total_cases + " 人");
+                                $("#card4").html(res.total_deaths + " 人");
+                            },
+                            error: function (xhr, type, errorThrown) {
+                                alert("GetCardDataError")
+                                console.log(xhr);
+                                console.log(type);
+                                console.log(errorThrown);
+                            }
+                        })
                     }
                 },
                 saveAsImage:{}
@@ -218,4 +237,22 @@ ec_map.on("click", function (params) {
     lineoption.dataset[1].transform.config["="]=params.name;
     lineoption.title.subtext=params.name;
     ec_line.setOption(lineoption)
+    $.ajax({
+        url:'/card',
+        type:'POST',
+        data:{'region':params.name},
+        success: function (res) {
+            $("span").text(params.name)
+            $("#card1").html(res.new_cases + " 人");
+            $("#card2").html(res.new_deaths + " 人");
+            $("#card3").html(res.total_cases + " 人");
+            $("#card4").html(res.total_deaths + " 人");
+        },
+        error: function (xhr, type, errorThrown) {
+            alert("GetCardDataError")
+            console.log(xhr);
+            console.log(type);
+            console.log(errorThrown);
+        }
+    })
 })

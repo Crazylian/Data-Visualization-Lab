@@ -39,11 +39,12 @@ def get_csv_data(filename:str,i:int):
     df=pd.read_csv(filename)
     return(df.iloc[-i:])
 
-def get_card_data():
+def get_card_data(loc:str):
     df = pd.read_csv(full_data)
+    df = df.fillna('NaN')
     df_groupby = df[['date', 'location']].groupby(by='location', as_index=False).max()
     df_merge = pd.merge(df_groupby, df, on=['date', 'location']).drop_duplicates()
-    df_card = df_merge.loc[df_merge['location'] == "World"]
+    df_card = df_merge.loc[df_merge['location'] == loc ]
     return df_card
 
 
@@ -54,4 +55,4 @@ def get_line_data():
 
 
 if __name__ == '__main__':
-    print(gettime())
+    print(get_card_data("world"))

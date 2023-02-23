@@ -36,19 +36,19 @@
     <div id="frame1">
         <div style="background:#54a0ff" , class="card">
             <p id="card1" , style="color:#FFFFFF; font-size: 32px;" , class="text-bold">new_cases</p>
-            <p style="color:#FFFFFF; font-size:18px" ,class="text-bold">全球新增确诊人数</p>
+            <p name="text", style="color:#FFFFFF; font-size:18px" ,class="text-bold">New Confirmed of <span>{{region}}</span></p>
         </div>
         <div style="background:#eb6b6a" , class="card">
             <p id="card2" , style="color:#FFFFFF; font-size: 32px;" , class="text-bold">new_cases</p>
-            <p style="color:#FFFFFF; font-size:18px" ,class="text-bold">全球新增死亡人数</p>
+            <p name="text", style="color:#FFFFFF; font-size:18px" ,class="text-bold">New Death of <span>{{region}}</span></p>
         </div>
         <div class="card">
             <p id="card3" , style="color:#131414; font-size: 32px;" , class="text-bold">new_cases</p>
-            <p style="color:#131414; font-size:18px;" ,class="text-bold">全球累计确诊人数</p>
+            <p name="text", tyle="color:#131414; font-size:18px;" ,class="text-bold">Total Confirmed of <span>{{region}}</span></p>
         </div>
         <div class="card">
             <p id="card4" , style="color:#131414; font-size: 32px;" , class="text-bold">new_cases</p>
-            <p style="color:#131414; font-size:18px" ,class="text-bold">全球累计死亡人数</p>
+            <p name="text", style="color:#131414; font-size:18px" ,class="text-bold">Total Death of <span>{{region}}</span></p>
         </div>
     </div>
     <div id="frame2">
@@ -58,6 +58,7 @@
     <div id="frame3">
         <div id="bar_pm", class="big_card"></div>
     </div>
+    <div name="1111"></div>
     <script src="../static/js/ec_map.js"></script>
     <script src="../static/js/page_ctrl.js"></script>
     <script src="../static/js/ec_linechart.js"></script>

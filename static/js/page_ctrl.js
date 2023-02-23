@@ -16,15 +16,20 @@ function getcarddata() {
     $.ajax({
         url: "/card",
         type: "POST",
-        dataType: "json",
-        success: function (data) {
-            $("#card1").html(data.new_cases + " 人");
-            $("#card2").html(data.new_deaths + " 人");
-            $("#card3").html(data.total_cases + " 人");
-            $("#card4").html(data.total_deaths + " 人");
+        // dataType: "application/json",
+        data:{'region':'World'},
+        success: function (res) {
+            $("span").text("World")
+            $("#card1").html(res.new_cases + " 人");
+            $("#card2").html(res.new_deaths + " 人");
+            $("#card3").html(res.total_cases + " 人");
+            $("#card4").html(res.total_deaths + " 人");
         },
-        error: function () {
+        error: function (xhr, type, errorThrown) {
             alert("GetCardDataError")
+            console.log(xhr);
+            console.log(type);
+            console.log(errorThrown);
         }
     })
 }
@@ -84,6 +89,7 @@ function getbardata(){
         }
     })
 }
+
 
 getlinedata();
 getcarddata();

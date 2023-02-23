@@ -3,6 +3,7 @@ from flask import render_template
 import utils
 import pandas as pd
 from flask import jsonify
+from flask import request
 
 app = Flask(__name__)
 
@@ -19,7 +20,10 @@ def updatetime():
 
 @app.route("/card", methods=["get", "post"])
 def getcarddata():
-    df = utils.get_card_data()
+    loc =request.form.get('region')
+    # print(loc)
+    df = utils.get_card_data(loc)
+    # print(df)
     return jsonify(df.iloc[0].to_dict())
 
 
